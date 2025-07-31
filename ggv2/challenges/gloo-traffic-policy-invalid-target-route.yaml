@@ -1,0 +1,13 @@
+apiVersion: gloo.solo.io/v1alpha1
+kind: GlooTrafficPolicy
+metadata:
+  name: timeout
+  namespace: httpbin
+spec:
+  timeouts:
+    request: 20s
+    streamIdle: 60s
+  targetRefs:
+    - group: gateway.networking.k8s.io
+      kind: HTTPRoute
+      name: httpbin-timeout
