@@ -1,7 +1,7 @@
 apiVersion: gloo.solo.io/v1alpha1
 kind: GlooTrafficPolicy
 metadata:
-  name: timeout
+  name: gtp-timeout-invalid-route
   namespace: httpbin
 spec:
   timeouts:
