@@ -5,7 +5,7 @@ metadata:
   namespace: httpbin
 spec:
   parentRefs:
-    - name: http-not-exist
+    - name: http-not-exist-gw
       namespace: gloo-gateway-system
   hostnames:
     - "www.example4.com"
