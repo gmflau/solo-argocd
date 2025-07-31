@@ -1,0 +1,15 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: httpbin3
+  namespace: httpbin
+spec:
+  parentRefs:
+    - name: http
+      namespace: gloo-gateway-system
+  hostnames:
+    - "www.example3.com"
+  rules:
+    - backendRefs:
+        - name: httpbin3
+          port: 8000
