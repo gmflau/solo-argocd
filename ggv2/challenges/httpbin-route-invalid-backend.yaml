@@ -1,7 +1,7 @@
 apiVersion: gateway.networking.k8s.io/v1
 kind: HTTPRoute
 metadata:
-  name: httpbin3
+  name: route-invalid-backend
   namespace: httpbin
 spec:
   parentRefs:
@@ -11,5 +11,5 @@ spec:
     - "www.example3.com"
   rules:
     - backendRefs:
-        - name: httpbin3
+        - name: httpbin-invalid-backend
           port: 8000
