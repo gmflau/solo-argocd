@@ -1,0 +1,9 @@
+apiVersion: gloo.solo.io/v1alpha1
+kind: GlooTrafficPolicy
+metadata:
+  name: gtp-timeout
+  namespace: httpbin
+spec:
+  timeouts:
+    request: 20s
+    streamIdle: 60s
