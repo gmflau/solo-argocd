@@ -15,6 +15,6 @@ spec:
          type: PathPrefix
          value: /
       backendRefs:
-        - name: httpbin-invalid-backend
+        - name: httpbin
           port: 8000
 
