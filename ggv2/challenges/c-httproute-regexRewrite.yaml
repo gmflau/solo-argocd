@@ -19,7 +19,7 @@ spec:
           urlRewrite:
             path:
               type: ReplacePrefixMatch
-              replacePrefixMatch: /ip
+              replacePrefixMatch: /anything
       backendRefs:
         - name: httpbin
           port: 8000
