@@ -14,6 +14,12 @@ spec:
       - path:
          type: PathPrefix
          value: /
+       filters:
+         - type: ExtensionRef
+           extensionRef:
+             group: gloo.solo.io
+             kind: GlooTrafficPolicy
+             name: gtp-timeout
       backendRefs:
         - name: httpbin
           port: 8000
