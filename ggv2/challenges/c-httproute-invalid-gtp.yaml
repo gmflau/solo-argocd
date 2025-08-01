@@ -10,7 +10,7 @@ spec:
   hostnames:
     - "www.example4.com"
   rules:
-    - matches
+    - matches:
       - path:
          type: PathPrefix
          value: /
